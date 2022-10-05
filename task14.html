@@ -17,8 +17,17 @@
         let id = 1;
         for(let i = 0; i<friends.length; i++)
         {
+            if(friends[i]==="Anees")
+            {
+                document.getElementById(id).innerHTML = "It's ok "+friends[i]+" I will invite you in my next party";
+                id++;
+
+            }
+            else
+            {
             document.getElementById(id).innerHTML = "welcome "+friends[i]+" at my dinner party"; 
             id++;
+            }
         }
     </script>
 </body>
