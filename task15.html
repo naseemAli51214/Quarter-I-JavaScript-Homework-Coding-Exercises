@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="1"></h1>
-    <h1 id="2"></h1>
-    <h1 id="3"></h1>
-    <h1 id="4"></h1>
-    <h1 id="5"></h1>
     <script>
-        const friends = ["salam","Nabeel","Javed","Farhan","Anees"];
-        let id = 1;
-        for(let i = 0; i<friends.length; i++)
+        let friends = ["salam","Nabeel","Anees"];
+        for(let i=0;i<friends.length;i++)
         {
+            let id =0;
             if(friends[i]==="Anees")
             {
-                document.getElementById(id).innerHTML = "It's ok "+friends[i]+" I will invite you in my next party";
-                id++;
-
+                console.log("it's ok "+friends[i]+" please come on next birthday i will be waiting for you");
             }
             else
             {
-            document.getElementById(id).innerHTML = "welcome "+friends[i]+" at my dinner party"; 
+            console.log("welcom "+friends[i]+ " to my dinner party");
             id++;
             }
         }
